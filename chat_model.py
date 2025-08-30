@@ -1,8 +1,5 @@
-# chatbot_model.py
-# Ejemplo base de entrenamiento local (LSTM) para mapear preguntas a fragmentos/respuestas
-import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Embedding, LSTM, Dense, TimeDistributed
+from keras.models import Sequential
+from keras.layers import Embedding, LSTM, Dense, TimeDistributed
 
 def crear_modelo(vocab_size=10000, embedding_dim=128, max_len=100):
     model = Sequential([
